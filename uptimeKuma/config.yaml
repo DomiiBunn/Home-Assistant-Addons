@@ -3,7 +3,7 @@ name: Uptime Kuma
 version: "1.1.0"
 slug: uptimeKuma
 description: It is a self-hosted monitoring tool like "Uptime Robot".
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+url: "https://github.com/louislam/uptime-kuma"
 arch:
   - armhf
   - armv7
