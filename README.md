@@ -1,24 +1,41 @@
-# Example Home Assistant add-on repository
-
-This repository can be used as a "blueprint" for add-on development to help you get started.
-
-Add-on documentation: <https://developers.home-assistant.io/docs/add-ons>
-
-[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fhome-assistant%2Faddons-example)
-
+# DomiiBunns' Home Assistant add-on repository
 ## Add-ons
 
 This repository contains the following add-ons
 
-### [Example add-on](./example)
+### [Uptime Kuma](./uptimeKuma)
 
-![Supports aarch64 Architecture][aarch64-shield]
+It is a self-hosted monitoring tool like "Uptime Robot".
+
+<div align="center" width="100%">
+    <img src="./public/icon.svg" width="128" alt="" />
+</div>
+
+Try it!
+
+https://demo.uptime.kuma.pet
+
+It is a temporary live demo, all data will be deleted after 10 minutes. The server is located in Tokyo, so if you live far from there, it may affect your experience. I suggest that you should install and try it out for the best demo experience.
+
+VPS is sponsored by Uptime Kuma sponsors on Open Collective! Thank you so much!
+
+⭐ Features 
+
+- Monitoring uptime for HTTP(s) / TCP / HTTP(s) Keyword / Ping / DNS Record / Push / Steam Game Server.
+- Fancy, Reactive, Fast UI/UX.
+- Notifications via Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP), and 70+ notification services, click here for the full list.
+- 20 second intervals.
+- Multi Languages
+- Simple Status Page
+- Ping Chart
+- Certificate Info
+
+
+<!-- ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
 ![Supports armhf Architecture][armhf-shield]
 ![Supports armv7 Architecture][armv7-shield]
-![Supports i386 Architecture][i386-shield]
-
-_Example add-on to use as a blueprint for new add-ons._
+![Supports i386 Architecture][i386-shield] -->
 
 <!--
 
