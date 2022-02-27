@@ -1,18 +1,38 @@
-# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+---
 name: Uptime Kuma
-version: "1.1.0"
-slug: uptimeKuma
-description: It is a self-hosted monitoring tool like "Uptime Robot".
-url: "https://github.com/louislam/uptime-kuma"
+version: dev
+slug: uptimekuma
+description: Modern monitoring solution
+url: https://github.com/DomiiBunn/Home-Assistant-Addons/tree/main/uptimeKuma
+ingress: true
+ingress_port: 0
+ingress_stream: true
+panel_icon: mdi:sitemap
+init: false
+homeassistant: 2021.3.0
 arch:
-  - armhf
-  - armv7
   - aarch64
   - amd64
+  - armhf
+  - armv7
   - i386
-init: false
-options:
-  message: "Hello world..."
-schema:
-  message: "str?"
-image: "ghcr.io/home-assistant/{arch}-addon-example"
+ports:
+  80/tcp: 1880
+ports_description:
+  80/tcp: Web interface
+hassio_api: true
+hassio_role: manager
+homeassistant_api: false
+host_network: true
+auth_api: false
+uart: true
+gpio: false
+privileged:
+  - SYS_RAWIO
+devices:
+  - /dev/mem
+apparmor: false
+map:
+  - config:rw
+  - media:rw
+  - share:rw

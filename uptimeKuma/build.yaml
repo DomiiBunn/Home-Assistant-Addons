@@ -1,13 +1,7 @@
-# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+---
 build_from:
-  aarch64: "ghcr.io/home-assistant/aarch64-base:3.14"
-  amd64: "ghcr.io/home-assistant/amd64-base:3.14"
-  armhf: "ghcr.io/home-assistant/armhf-base:3.14"
-  armv7: "ghcr.io/home-assistant/armv7-base:3.14"
-  i386: "ghcr.io/home-assistant/i386-base:3.14"
-labels:
-  org.opencontainers.image.title: "Home Assistant Add-on: Uptime Kuma"
-  org.opencontainers.image.description: "Uptime kuma addon for home assistant"
-  org.opencontainers.image.source: "https://github.com/DomiiBunn/addons/tree/main/uptimeKuma"
-args:
-  TEMPIO_VERSION: "2021.09.0"
+  aarch64: ghcr.io/hassio-addons/base/aarch64:11.0.1
+  amd64: ghcr.io/hassio-addons/base/amd64:11.0.1
+  armhf: ghcr.io/hassio-addons/base/armhf:11.0.1
+  armv7: ghcr.io/hassio-addons/base/armv7:11.0.1
+  i386: ghcr.io/hassio-addons/base/i386:11.0.1

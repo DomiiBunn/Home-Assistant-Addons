@@ -1,0 +1,17 @@
+stages:
+  - Build Container
+
+Build Container:
+  image: docker:19.03.12
+  services:
+    - docker:19.03.12-dind
+  only:
+    - main
+  before_script:
+   - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - cd uptimeKuma
+    - docker pull $CI_REGISTRY_IMAGE:uptimeKuma || true
+    - docker build --cache-from $CI_REGISTRY_IMAGE:uptimeKuma --tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA --tag $CI_REGISTRY_IMAGE:uptimeKuma .
+    - docker push $CI_REGISTRY_IMAGE:uptimeKuma
+  stage: Build Container

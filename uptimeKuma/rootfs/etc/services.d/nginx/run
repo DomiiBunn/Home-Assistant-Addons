@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: Uptime Kuma
+# Runs the Nginx daemon
+# ==============================================================================
+
+# Wait for Uptime Kuma to become available
+bashio::net.wait_for 46836 localhost 3001
+
+bashio::log.info "Starting NGinx..."
+exec nginx

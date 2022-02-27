@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: DomiiBunns' Home Assistant Addons
-url: 'https://github.com/DomiiBunn/addons'
-maintainer: Dominika Jadowska <>
+url: 'https://github.com/DomiiBunn/Home-Assistant-Addons'
+maintainer: Dominika Jadowska <docker@domiibunn.live>
